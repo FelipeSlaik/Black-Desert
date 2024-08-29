@@ -1,5 +1,8 @@
 /* 
-    1-HEADER
+    1-HEADER/MENU
+*/
+/* 
+    2-SECTION/CARD
 */
 
 
@@ -10,6 +13,8 @@
     box-sizing: border-box;
     font-family: "Baskervville SC", serif;
     list-style: none;
+    text-decoration: none;
+    
 }
 
 :root{
@@ -22,11 +27,12 @@
 }
 
 body{
-    background: var(--body-color);
+   background-color: var(--body-color); 
+   
 }
 
 /* 
-    1-HEADER
+    1-HEADER/MENU
 */
 
 header{
@@ -38,6 +44,7 @@ header{
     font-weight: 600;
     font-size: 18px;
     background-color: var(--black-color);
+    
 }
 
 .logo{
@@ -82,6 +89,83 @@ ul a::after{
     width: 100%;
     left: 0;
  }
+
+
+ /* 
+    2-SECTION/CARD
+*/
+
+section{
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title-text{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 24px 0;
+}
+
+.classe-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 14px; 
+    margin-top: 20px; 
+}
+
+.card-container{
+    background-image: url(img/warrior-img/warrior1.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.card-container:hover{
+    transform: translate(1%, 1%) scale(1.1);
+    transition: all 1.5s;
+}
+
+.card-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-info h2{
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: var(--white-text);
+   padding-bottom: 2px;
+   letter-spacing: 0.8px;
+}
+
+.card-info img{
+    width: 60px;
+}
+
+
+
+
+
 
 
 
