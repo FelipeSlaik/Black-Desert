@@ -13,7 +13,7 @@ const imagemFundo = [
     'img/bruxa/bruxa1.png',
     'img/lutador/lutador1.jpg',
     'img/mistica/mistica1.jpg',
-    'img/lahn/lahn1.webp',
+    'img/lahn/lahn1.jpg',
     'img/arqueiro/arqueiro1.jpg',
     'img/darknight/darknight1.png',
     'img/shai/shai1.png',
@@ -95,15 +95,52 @@ const nomeDasClasses = [
     // todos os 28 nomes de classes
 ];
 
+const linkDasClasses = [
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+"javascript:void(0)",
+]
+
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById("card-container");
 
     for(let i =0; i < 28; i++){
+        const linkClasses = document.createElement("a");
+        linkClasses.classList.add("link-sobre-classes");
+        linkClasses.href = linkDasClasses[i];
+        // linkClasses.target = "_blank";
+        
         const card = document.createElement("div");
         card.classList.add("card-container");
 
         // Usando o array para definir a imagem de fundo
         card.style.backgroundImage = `url("${imagemFundo[i]}")`;
+        
 
         const cardInfo = document.createElement("div");
         cardInfo.classList.add("card-info");
@@ -120,9 +157,12 @@ document.addEventListener('DOMContentLoaded', () => {
         nome.textContent = nomeDasClasses[i];
 
         cardInfo.appendChild(simbolosImg);
-        cardInfo.appendChild(nome)
+        cardInfo.appendChild(nome);
         card.appendChild(cardInfo);
-        container.appendChild(card);
+        linkClasses.appendChild(card)
+        container.append(linkClasses);
     }
+
+    
 })
 
