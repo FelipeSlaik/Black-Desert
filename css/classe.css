@@ -1,0 +1,169 @@
+/* 
+    1-BANNER DA CLASSE
+    2-INFO GUERREIRO INICIAL
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+    text-decoration: none;
+}
+
+:root {
+    --body-color: #222222;
+    --text-color: #d5d4d499;
+    --black-color: #2b2b2b;
+    --white-text: #fff;
+    --black-color: #000;
+    --purple-text: #2c3b7c;
+    --underline-color: #d1ab85;
+}
+
+/* 
+    1-BANNER DA CLASSE
+*/
+
+header{
+    max-width: 100%;
+    background-color: var(--black-color);
+}
+
+.nav{
+    width: 100%;
+    padding: 12px;
+}
+
+.nav a{
+    color: var(--white-text);
+    font-size: 24px;
+    padding-left: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav a:hover{
+    color: var(--text-color);
+}
+
+.banner-bg{
+    width: 100%;
+    height: 700px;
+}
+
+.warrior{
+    position: absolute;
+    bottom: 14%;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+/* 
+    2-INFO GUERREIRO INICIAL
+*/
+
+.info-guerreiro{
+    height: auto;
+    padding: 70px;
+    background: url("/img//warrior/bg-warrior.jpg");
+}
+
+.info-inicial{
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linha{
+    height: 1px;
+    width: 100%;
+    background-color: var(--body-color);
+    margin: 20px 0;
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1{
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+}
+
+h4{
+    color: var(--purple-text);
+    font-size: 20px;
+}
+
+h3{
+    font-size: 24px;
+}
+.apresentacao-classe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.video-classe{
+        width: 100%;
+        height: 300px;
+        max-width: 600px;
+        border: none; 
+}
+
+
+/* 
+    3-SEÇÃO DESPERTAR
+*/
+.despertar-container{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    background: url("/img//warrior/bg-despertar.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
+.content-despertar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 50px;
+}
+
+.classe-despertar{
+    width: 52%;
+    height: auto;
+    padding-right: 10px;
+    color: var(--white-text);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* .warrior {
+    position: absolute;
+    bottom: 72%;
+    left: 0;
+} */
