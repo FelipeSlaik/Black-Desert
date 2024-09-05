@@ -96,7 +96,7 @@ const nomeDasClasses = [
 ];
 
 const linkDasClasses = [
-"javascript:void(0)",
+"./page/classe.html",
 "javascript:void(0)",
 "javascript:void(0)",
 "javascript:void(0)",
