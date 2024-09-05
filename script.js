@@ -161,8 +161,6 @@ document.addEventListener('DOMContentLoaded', () => {
         card.appendChild(cardInfo);
         linkClasses.appendChild(card)
         container.append(linkClasses);
-    }
-
-    
+    } 
 })
 

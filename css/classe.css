@@ -1,6 +1,8 @@
 /* 
     1-BANNER DA CLASSE
     2-INFO GUERREIRO INICIAL
+    3- SEÇÃO DESPERTAR
+    4- SEÇÃO ASCENÇÃO
 */
 
 
@@ -8,7 +10,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Baskervville SC", serif;
+    /* font-family: "Baskervville SC", serif; */
+    font-family: 'StrongSword_New';
     text-decoration: none;
 }
 
@@ -28,6 +31,7 @@
 
 header{
     max-width: 100%;
+    width: 100%;
     background-color: var(--black-color);
 }
 
@@ -48,36 +52,47 @@ header{
     color: var(--text-color);
 }
 
-.banner-bg{
-    width: 100%;
-    height: 700px;
+.banner{
+    background: url(/img/warrior/warrior1.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
-.warrior{
-    position: absolute;
-    bottom: 14%;
-    left: 0;
+/* .banner-bg{
     width: 100%;
-    height: auto;
+    height: 44em;
+} */
+
+.warrior {
+    width: 100%;
+    max-height: 80px;
+    min-height: 40px;
+    object-fit: cover;
 }
 /* 
     2-INFO GUERREIRO INICIAL
 */
 
 .info-guerreiro{
-    height: auto;
-    padding: 70px;
+    height: 100%;
+    /* padding: 70px; */
     background: url("/img//warrior/bg-warrior.jpg");
+    background-size: cover;
 }
 
 .info-inicial{
-    max-width: 50%;
+    max-width: 600px;
     width: 100%;
     height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 70px;
 }
 
 .linha{
@@ -130,7 +145,7 @@ h3{
     3-SEÇÃO DESPERTAR
 */
 .despertar-container{
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     background: url("/img//warrior/bg-despertar.jpg");
@@ -144,26 +159,40 @@ h3{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 50px;
+    padding: 70px;
 }
 
 .classe-despertar{
-    width: 52%;
-    height: auto;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
     padding-right: 10px;
     color: var(--white-text);
     text-align: center;
 }
 
 
+/* 
+    4- SEÇÃO ASCENÇÃO
+*/
+.ascencao-container{
+    background: url(/img/warrior/warrior-asc.jpg);
+    height: 100vh;
+    padding: 80px 44px 80px 0;
+}
+
+.classe-asencao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 60%;
+    padding: 20px;
+    color: var(--white-text);
+}
 
 
 
+ 
 
-
-
-/* .warrior {
-    position: absolute;
-    bottom: 72%;
-    left: 0;
-} */
