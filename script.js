@@ -96,8 +96,8 @@ const nomeDasClasses = [
 ];
 
 const linkDasClasses = [
-"./page/classe.html",
-"javascript:void(0)",
+"./page/warrior.html",
+"./page/cacadora.html",
 "javascript:void(0)",
 "javascript:void(0)",
 "javascript:void(0)",
